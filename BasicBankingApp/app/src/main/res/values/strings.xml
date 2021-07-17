@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Basic Banking App</string>
+    <string name="view_all_customers">View All Customers</string>
+    <string name="basic_banking_app">BASIC BANKING APP</string>
+    <string name="transfer">Transfer</string>
+    <string name="enter_transfer_amount">enter transfer amount</string>
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Social Media IntegrationApp</string>
+    <string name="sign_in">Sign In</string>
+    <string name="login">Login</string>
+    <string name="email">Password</string>
+    <string name="username">Username</string>
+    <string name="email_">Email:</string>
+    <string name="logout">Logout</string>
+
+    <string name="facebook_app_id">343776130457902</string>
+    <string name="fb_login_protocol_scheme">fb343776130457902</string>
+    <string name="or">or</string>
+    <string name="title_activity_splash_screen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="348dp"
+        android:layout_height="357dp"
+        android:background="@drawable/translucent_layout_holder"
+        android:elevation="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.609">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/logo_small" />
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:alpha="0.8"
+            android:background="#676767" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pragmatica_extralight"
+            android:padding="10dp"
+            android:shadowColor="#E1E1E1"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="20"
+            android:text="@string/sign_in"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="317dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittext_style"
+            android:ems="10"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:paddingStart="12dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="317dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_style"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textPassword"
+            android:paddingStart="12dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="234dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="20dp"
+            android:alpha="0.8"
+            android:background="@drawable/round_button_layout"
+            android:elevation="8dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/login"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/fb_login_button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleSignInButton"
+        android:layout_width="206dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.434" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="47dp"
+        android:layout_height="24dp"
+        android:gravity="center_horizontal"
+        android:text="@string/or"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/fb_login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/googleSignInButton"
+        app:layout_constraintVertical_bias="0.517" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
